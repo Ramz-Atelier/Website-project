@@ -1,0 +1,534 @@
+/* ============================================================
+   DESIGN SYSTEM — Design Tokens, Reset, Typography, Scrollbar
+   Premium Personal Portfolio
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. CSS Custom Properties — Light Mode (Default)
+   ------------------------------------------------------------ */
+:root {
+  /* === Color Palette === */
+  --bg-primary: #FAFAF8;
+  --bg-secondary: #F5F0EB;
+  --bg-tertiary: #EDE8E3;
+  --bg-elevated: #FFFFFF;
+
+  --text-primary: #2D2D2D;
+  --text-secondary: #5A5A5A;
+  --text-muted: #8A8A8A;
+
+  /* Accent Colors */
+  --accent-sage: #8FB09A;
+  --accent-sage-light: #B5D0BE;
+  --accent-sage-dark: #6E9179;
+  --accent-blue: #7EA8C4;
+  --accent-lavender: #B8A9D4;
+  --accent-peach: #E8B4A2;
+
+  /* Glass Morphism */
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.3);
+
+  /* Shadows — Layered and Soft */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.1);
+
+  /* Borders */
+  --border-color: rgba(0, 0, 0, 0.06);
+
+  /* === Border Radius Scale === */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+
+  /* === Transitions === */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+
+  /* === Typography === */
+  --font-heading: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Font Sizes — Fluid Typography */
+  --size-display: clamp(2.5rem, 5vw, 3.5rem);
+  --size-h1: clamp(2rem, 4vw, 2.5rem);
+  --size-h2: clamp(1.5rem, 3vw, 2rem);
+  --size-h3: 1.25rem;
+  --size-body: 1rem;
+  --size-small: 0.875rem;
+  --size-caption: 0.75rem;
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.8;
+
+  /* === Spacing Scale === */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 80px;
+
+  /* === Z-Index Scale === */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 500;
+  --z-nav: 1000;
+  --z-modal: 2000;
+  --z-toast: 3000;
+  --z-tooltip: 4000;
+
+  /* === Nav Height === */
+  --nav-height: 64px;
+
+  /* === Color Scheme Hint === */
+  color-scheme: light dark;
+}
+
+/* ------------------------------------------------------------
+   2. CSS Custom Properties — Dark Mode
+   ------------------------------------------------------------ */
+[data-theme="dark"] {
+  --bg-primary: #1A1A2E;
+  --bg-secondary: #222240;
+  --bg-tertiary: #2A2A4A;
+  --bg-elevated: #2E2E50;
+
+  --text-primary: #F0F0F0;
+  --text-secondary: #C0C0C0;
+  --text-muted: #888888;
+
+  --accent-sage: #A3C4AE;
+  --accent-sage-light: #C5E0CE;
+  --accent-sage-dark: #82A78D;
+  --accent-blue: #92BCD8;
+  --accent-lavender: #C8BBE0;
+  --accent-peach: #F0C4B4;
+
+  --glass-bg: rgba(30, 30, 60, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.1);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.35);
+
+  --border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ------------------------------------------------------------
+   3. Modern CSS Reset
+   ------------------------------------------------------------ */
+
+/* Box Sizing Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation on mobile */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+/* Core body styles */
+body {
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  /* Smooth transitions for theme switching */
+  transition:
+    background-color var(--transition-slow),
+    color var(--transition-slow);
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4, h5, h6 {
+  line-height: var(--leading-tight);
+  text-wrap: balance;
+}
+
+/* Paragraph text wrapping */
+p {
+  text-wrap: pretty;
+}
+
+/* Make images and media responsive */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* Remove built-in form typography styles */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* Textarea without resize behavior, unless overridden */
+textarea {
+  white-space: revert;
+}
+
+/* Remove the default fieldset styles */
+fieldset {
+  border: none;
+}
+
+/* Avoid text overflows */
+h1, h2, h3, h4, h5, h6, p, a, span, li {
+  overflow-wrap: break-word;
+}
+
+/* Remove anchor underlines and colors by default */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Target inside of SVG */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Table reset */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove animation on page load */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ------------------------------------------------------------
+   4. Typography System
+   ------------------------------------------------------------ */
+
+/* Display — Hero headlines */
+.text-display {
+  font-family: var(--font-heading);
+  font-size: var(--size-display);
+  font-weight: var(--weight-extrabold);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+/* H1 */
+h1,
+.text-h1 {
+  font-family: var(--font-heading);
+  font-size: var(--size-h1);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.015em;
+  color: var(--text-primary);
+}
+
+/* H2 */
+h2,
+.text-h2 {
+  font-family: var(--font-heading);
+  font-size: var(--size-h2);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+}
+
+/* H3 */
+h3,
+.text-h3 {
+  font-family: var(--font-body);
+  font-size: var(--size-h3);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  color: var(--text-primary);
+}
+
+/* Body */
+.text-body {
+  font-family: var(--font-body);
+  font-size: var(--size-body);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--text-primary);
+}
+
+/* Small */
+.text-small {
+  font-family: var(--font-body);
+  font-size: var(--size-small);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  color: var(--text-secondary);
+}
+
+/* Caption — Uppercase label */
+.text-caption {
+  font-family: var(--font-body);
+  font-size: var(--size-caption);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: var(--leading-normal);
+  color: var(--text-muted);
+}
+
+/* Strong / bold */
+strong,
+b {
+  font-weight: var(--weight-semibold);
+}
+
+/* Emphasis */
+em {
+  font-style: italic;
+}
+
+/* ------------------------------------------------------------
+   5. Selection Styling
+   ------------------------------------------------------------ */
+::selection {
+  background-color: var(--accent-sage);
+  color: #FFFFFF;
+}
+
+::-moz-selection {
+  background-color: var(--accent-sage);
+  color: #FFFFFF;
+}
+
+/* Dark mode selection */
+[data-theme="dark"] ::selection {
+  background-color: var(--accent-sage-dark);
+  color: #FFFFFF;
+}
+
+[data-theme="dark"] ::-moz-selection {
+  background-color: var(--accent-sage-dark);
+  color: #FFFFFF;
+}
+
+/* ------------------------------------------------------------
+   6. Custom Scrollbar
+   ------------------------------------------------------------ */
+
+/* Thin scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-sage-light) transparent;
+}
+
+/* WebKit Scrollbar (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-sage-light);
+  border-radius: var(--radius-full);
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background-color var(--transition-fast);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-sage);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--accent-sage-dark);
+}
+
+/* Hide scrollbar on very narrow elements */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Dark mode scrollbar adjustments */
+[data-theme="dark"] {
+  scrollbar-color: var(--accent-sage-dark) transparent;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background-color: var(--accent-sage-dark);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background-color: var(--accent-sage);
+}
+
+/* ------------------------------------------------------------
+   7. Focus Styles — Accessibility
+   ------------------------------------------------------------ */
+
+/* Global focus-visible ring — never remove outlines */
+:focus-visible {
+  outline: 2px solid var(--accent-sage);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Remove the default outline only when NOT focus-visible
+   This preserves keyboard accessibility while removing
+   mouse-click outlines */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Enhanced focus for interactive elements */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent-sage);
+  outline-offset: 2px;
+}
+
+/* Skip to content link (hidden until focused) */
+.skip-to-content {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-toast);
+  padding: var(--space-sm) var(--space-lg);
+  background-color: var(--accent-sage);
+  color: #FFFFFF;
+  font-weight: var(--weight-medium);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  transition: top var(--transition-fast);
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* ------------------------------------------------------------
+   8. Utility Color Classes
+   ------------------------------------------------------------ */
+.text-accent {
+  color: var(--accent-sage);
+}
+
+.text-accent-blue {
+  color: var(--accent-blue);
+}
+
+.text-accent-lavender {
+  color: var(--accent-lavender);
+}
+
+.text-accent-peach {
+  color: var(--accent-peach);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-sage), var(--accent-blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ------------------------------------------------------------
+   9. Smooth Theme Transition
+   Applies a smooth transition to elements that change with theme
+   ------------------------------------------------------------ */
+body,
+.nav,
+.card,
+.modal-content,
+.footer,
+.form-input,
+.form-textarea,
+.chip,
+.tag,
+.timeline-content,
+.contact-item,
+.interest-card,
+.bio-card,
+.cert-card,
+.stats-bar,
+.contact-form-container {
+  transition:
+    background-color var(--transition-slow),
+    color var(--transition-slow),
+    border-color var(--transition-slow),
+    box-shadow var(--transition-slow);
+}
