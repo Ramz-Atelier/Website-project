@@ -205,7 +205,7 @@ function createContactItem(icon, label, value, href = '#') {
 
 function createContactForm() {
   return `
-    <form id="contactForm" class="contact-form" onsubmit="handleFormSubmit(event)">
+    <form id="contactForm" class="contact-form" action="https://formsubmit.co/writeto.ram02@gmail.com" method="POST">
       <div class="form-group reveal stagger-item" style="--i: 0;">
         <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
         <label for="name" class="form-label">Name</label>
