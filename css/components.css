@@ -245,6 +245,7 @@
 @media (max-width: 992px) {
   .project-card, .project-card-reversed {
     flex-direction: column;
+    height: auto;
   }
   
   .project-card .project-thumbnail-wrapper,
@@ -254,6 +255,11 @@
     border-right: none;
     border-left: none;
     border-bottom: 1px solid var(--border-color);
+  }
+
+  .project-card .card-content {
+    width: 100%;
+    padding: 24px;
   }
   
   .project-card-reversed .card-badge {
@@ -389,7 +395,7 @@
   padding: 2px 7px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .cert-card {
     width: 100%;
     max-width: 400px;
@@ -515,6 +521,29 @@
 
 .modal-section .card-tags {
   margin-top: 16px;
+}
+
+@media (max-width: 767px) {
+  .modal-content {
+    max-height: 100vh;
+    height: 100vh;
+    border-radius: 0;
+    transform: translateY(100%);
+  }
+  
+  .modal-header {
+    padding: 32px 24px 24px;
+    min-height: auto;
+  }
+
+  .modal-body {
+    padding: 24px;
+  }
+  
+  .modal-body .grid-2 {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
 }
 
 /* Timeline */
@@ -764,6 +793,15 @@
   display: flex;
   gap: 16px;
   margin-top: 32px;
+}
+
+@media (max-width: 767px) {
+  .nav-links, .nav-social {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
 }
 
 
