@@ -180,19 +180,34 @@ window.handleFormSubmit = function(e) {
   const btn = form.querySelector('button[type="submit"]');
   const originalText = btn.innerHTML;
   
-  // Basic simulation of sending
   btn.innerHTML = 'Sending...';
   btn.disabled = true;
   
-  setTimeout(() => {
-    // Hide form fields (all .form-group except the button, or just all inputs)
+  const formData = new FormData(form);
+  
+  fetch('https://formsubmit.co/ajax/writeto.ram02@gmail.com', {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Hide form fields (all .form-group)
     form.querySelectorAll('.form-group').forEach(fg => {
       fg.style.display = 'none';
     });
     
     const success = document.getElementById('formSuccess');
     success.classList.add('active');
-  }, 1000);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    btn.innerHTML = originalText;
+    btn.disabled = false;
+    alert('Sorry, there was an issue sending your message. Please try again later.');
+  });
 };
 
 window.resetForm = function() {
