@@ -422,6 +422,50 @@ const INTERESTS = [
 const INSIGHTS = [
   {
     id: 'insight-1',
+    title: "It'll only take 5 minute",
+    date: 'July 21, 2026',
+    category: 'Operations',
+    excerpt: "Every workplace has that one sentence... I'll just do it quickly.",
+    readTime: '1 min read',
+    linkedinUrl: 'https://www.linkedin.com/posts/thulasiram-r_workplacelearning-productivity-operations-share-7485245854585589760-20G1/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQuwJoBWoJyUO66R5lvpVTqXShvnMdl0b4',
+    icon: 'clipboard-check',
+    thumbnail: 'assets/images/only5mins.png'
+  },
+  {
+    id: 'insight-2',
+    title: "A Meeting Without Action Is Just a Conversation",
+    date: 'July 17, 2026',
+    category: 'Documentation',
+    excerpt: "Ever walked out of a meeting... and immediately asked, So... who's actually doing what?",
+    readTime: '1 min read',
+    linkedinUrl: 'https://www.linkedin.com/posts/thulasiram-r_leadership-meetings-teamwork-share-7482840497296785408-17lF/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQuwJoBWoJyUO66R5lvpVTqXShvnMdl0b4',
+    icon: 'clipboard-check',
+    thumbnail: 'assets/images/meetingwaaction.png'
+  },
+{
+    id: 'insight-3',
+    title: "27 Emails. 1 Useful Update",
+    date: 'July 16, 2026',
+    category: 'Operations',
+    excerpt: 'Every workplace has that one email... The one where everyone gets copied.',
+    readTime: '1 min read',
+    linkedinUrl: 'https://www.linkedin.com/posts/thulasiram-r_communication-workplacehumor-operations-share-7482824088135303168-RO58/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQuwJoBWoJyUO66R5lvpVTqXShvnMdl0b4',
+    icon: 'clipboard-check',
+    thumbnail: 'assets/images/27emails.png'
+  },
+{
+    id: 'insight-4',
+    title: "What's one 'urgent' task you've successfully deprioritized lately?",
+    date: 'July 15, 2026',
+    category: 'Task Management',
+    excerpt: "Nobody talks about this enough... Being productive isn't about finishing everything...",
+    readTime: '1 min read',
+    linkedinUrl: 'https://www.linkedin.com/posts/thulasiram-r_productivity-operations-leadership-share-7482822318138957824-MLzc/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQuwJoBWoJyUO66R5lvpVTqXShvnMdl0b4',
+    icon: 'clipboard-check',
+    thumbnail: 'assets/images/urgenttask.png'
+  },
+  {
+    id: 'insight-6',
     title: "The deadline is visible. The work isn't",
     date: 'July 07, 2026',
     category: 'Operations',
@@ -432,7 +476,7 @@ const INSIGHTS = [
     thumbnail: 'assets/images/Img_jul7.png'
   },
   {
-    id: 'insight-2',
+    id: 'insight-7',
     title: 'A good SOP creates consistency, not complexity',
     date: 'July 03, 2026',
     category: 'Documentation',
@@ -441,94 +485,6 @@ const INSIGHTS = [
     linkedinUrl: 'https://www.linkedin.com/posts/thulasiram-r_operations-sop-processimprovement-activity-7478454944652505088-Aj2Q?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQuwJoBWoJyUO66R5lvpVTqXShvnMdl0b4',
     icon: 'bot',
     thumbnail: 'assets/images/Firefly_Gemini Flash_2.png'
-  },
-  {
-    id: 'insight-3',
-    title: 'The Dashboard That Changed How Our Leadership Makes Decisions',
-    date: 'May 10, 2025',
-    category: 'Data Analytics',
-    excerpt: 'Our leadership team was making decisions based on week-old data. I built a Power BI dashboard that gave them real-time visibility — and the results surprised everyone...',
-    readTime: '3 min read',
-    linkedinUrl: 'https://www.linkedin.com/in/thulasiram-r/',
-    icon: 'bar-chart-3',
-    thumbnail: 'assets/images/Firefly_Gemini Flash_2.png'
-  },
-  {
-    id: 'insight-4',
-    title: 'Why Every Operations Team Needs a Process Map (And How to Build One)',
-    date: 'Apr 22, 2025',
-    category: 'Process Improvement',
-    excerpt: 'Most operational inefficiencies are invisible until you map them. Here is a step-by-step guide to building your first process map using free tools...',
-    readTime: '6 min read',
-    linkedinUrl: 'https://www.linkedin.com/in/thulasiram-r/',
-    icon: 'settings',
-    thumbnail: 'assets/images/article_process_improvement.png'
-  },
-  {
-    id: 'insight-5',
-    title: 'Agile in Operations: It\'s Not Just for Software Teams',
-    date: 'Apr 5, 2025',
-    category: 'Project Management',
-    excerpt: 'We adopted Scrum for our operations team and saw a 40% improvement in delivery speed. Here is how we adapted the framework for a non-engineering context...',
-    readTime: '4 min read',
-    linkedinUrl: 'https://www.linkedin.com/in/thulasiram-r/',
-    icon: 'users',
-    thumbnail: 'assets/images/article_project_management.png'
-  },
-  {
-    id: 'insight-6',
-    title: 'Using AI to Process 10,000 Documents a Month — A Case Study',
-    date: 'Mar 18, 2025',
-    category: 'AI',
-    excerpt: 'We replaced a 5-person data entry team with an AI-powered document processing pipeline. Here is how we built it, the challenges we faced, and the ROI we achieved...',
-    readTime: '7 min read',
-    linkedinUrl: 'https://www.linkedin.com/in/thulasiram-r/',
-    icon: 'brain',
-    thumbnail: 'assets/images/article_ai.png'
-  },
-  {
-    id: 'insight-7',
-    title: 'The Lean Six Sigma Framework That Saved Us $500K in ARR',
-    date: 'Feb 25, 2025',
-    category: 'Process Improvement',
-    excerpt: 'By applying DMAIC methodology to our customer onboarding process, we reduced churn by 25% and retained half a million dollars in annual recurring revenue...',
-    readTime: '5 min read',
-    linkedinUrl: 'https://www.linkedin.com/in/thulasiram-r/',
-    icon: 'target',
-    thumbnail: 'assets/images/article_process_improvement.png'
-  },
-  {
-    id: 'insight-8',
-    title: '3 Power BI DAX Formulas Every Operations Analyst Should Know',
-    date: 'Feb 8, 2025',
-    category: 'Data Analytics',
-    excerpt: 'These three DAX patterns — time intelligence, running totals, and dynamic segmentation — transformed how I build operational dashboards...',
-    readTime: '4 min read',
-    linkedinUrl: 'https://www.linkedin.com/in/thulasiram-r/',
-    icon: 'pie-chart',
-    thumbnail: 'assets/images/article_data_analytics.png'
-  },
-  {
-    id: 'insight-9',
-    title: 'From Waterfall to Agile: A Change Management Playbook',
-    date: 'Jan 20, 2025',
-    category: 'Project Management',
-    excerpt: 'Transitioning 5 teams from waterfall to agile was the hardest project I have ever led. Here is the change management playbook that made it possible...',
-    readTime: '6 min read',
-    linkedinUrl: 'https://www.linkedin.com/in/thulasiram-r/',
-    icon: 'briefcase',
-    thumbnail: 'assets/images/article_project_management.png'
-  },
-  {
-    id: 'insight-10',
-    title: 'Scope Creep: How to Maintain Project Boundaries in Agile Teams',
-    date: 'Jan 5, 2025',
-    category: 'Project Management',
-    excerpt: 'Scope creep is the silent killer of project timelines. Here are three practical techniques to maintain boundaries while remaining flexible to stakeholder needs...',
-    readTime: '4 min read',
-    linkedinUrl: 'https://www.linkedin.com/in/thulasiram-r/',
-    icon: 'shield-alert',
-    thumbnail: 'assets/images/article_project_management.png'
   }
 ];
 
