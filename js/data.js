@@ -295,6 +295,17 @@ const PROJECTS = [
 
 const CERTIFICATIONS = [
   {
+    id: 'pmp1',
+    title: 'Project Initiation: Starting a Successful Project',
+    organization: 'Google',
+    date: 'Jul 2026',
+    credentialId: 'K6XKZ8N2GMQY',
+    category: 'Project Management',
+    skills: ['Asana', 'Cost-Benefit Analysis', 'Gantt', 'Project Management', 'Stakeholder Management', 'RACI chart', 'Scope Management', 'Work Management'],
+    icon: 'users',
+    verifyUrl: '#'
+  },
+  {
     id: 'pmp',
     title: 'Foundations of Project Management',
     organization: 'Google',
