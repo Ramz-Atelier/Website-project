@@ -12,8 +12,8 @@ const PROFILE = {
   ],
   stats: [
     { number: '11', label: 'Years Experience', suffix: '+' },
-    { number: '50', label: 'Projects Delivered', suffix: '+' },
-    { number: '15', label: 'Certifications', suffix: '+' },
+    { number: '5', label: 'Projects Delivered', suffix: '+' },
+    { number: '5', label: 'Certifications', suffix: '+' },
     { number: '30', label: 'Avg Efficiency Gain', suffix: '%' }
   ],
   contact: {
