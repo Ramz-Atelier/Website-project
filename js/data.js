@@ -291,7 +291,7 @@ const PROJECTS = [
 //     galleryImages: [],
 //     dashboardEmbed: ''
 //   }
-];//
+];
 
 const CERTIFICATIONS = [
   {
