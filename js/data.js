@@ -6,9 +6,9 @@ const PROFILE = {
   tagline: 'Passionate about Project Management, Operations, Process Improvement, AI-powered Automation, and Data Analytics.',
   greeting: "Hi, I'm",
   bio: [
-    'With over 11 years of experience in Operations and Customer Success, I bring a unique blend of business acumen and technical proficiency to every project.',
-    'I specialize in transforming complex business challenges into streamlined, automated workflows that deliver measurable results. My approach combines strategic thinking with hands-on implementation, leveraging modern tools and AI-driven solutions.',
-    'From leading cross-functional teams to designing data analytics dashboards, I am committed to driving operational excellence and continuous improvement in every organization I work with.'
+   'With over 11 years of experience in Operations, Customer Success, and Technical Project Coordination, I help businesses simplify complex processes, improve customer experiences, and drive operational excellence.',
+   'My expertise lies in streamlining workflows, leading cross-functional teams, and transforming business challenges into scalable solutions through process improvement, automation, and data-driven decision-making. I enjoy bridging the gap between business needs and technical execution to deliver meaningful results.',
+    'Currently, I am expanding my expertise in Project Management while preparing for the PMP® certification, intending to lead impactful projects that create lasting business value'
   ],
   stats: [
     { number: '11', label: 'Years Experience', suffix: '+' },
