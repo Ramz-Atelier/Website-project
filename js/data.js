@@ -114,50 +114,50 @@ const PROJECTS = [
     galleryImages: [],
     dashboardEmbed: ''
   },
-  {
-    id: 'agile-pm-framework',
-    title: 'Agile Project Management Framework Implementation',
-    category: 'Project Management',
-    thumbnail: '',
-    technologies: ['Jira', 'Confluence', 'Monday.com', 'Scrum'],
-    shortDescription: 'Led the organizational transition from waterfall to agile methodologies, increasing delivery speed by 40%.',
-    description: 'Spearheaded the Agile transformation for a 50-person operations and IT department. Replaced fragmented tracking tools with a unified Jira/Confluence ecosystem, established Scrum ceremonies, and coached teams on Agile best practices.',
-    problem: 'Projects were consistently delivered late and over budget due to rigid waterfall methodologies, lack of cross-functional communication, and poor visibility into resource allocation.',
-    objectives: [
-      'Transition 5 teams from waterfall to Scrum/Kanban',
-      'Implement a standardized Jira workflow across all teams',
-      'Improve project delivery speed and predictability',
-      'Enhance cross-departmental collaboration'
-    ],
-    approach: 'Adopted a phased approach, starting with a single pilot team. Conducted comprehensive Agile training. Configured Jira boards tailored to each team\'s specific needs while maintaining standardized reporting roll-ups for management.',
-    implementation: 'Configured complex Jira workflows with automated transitions, integrated Confluence for documentation, and set up advanced roadmaps for portfolio management. Facilitated daily stand-ups, sprint planning, and retrospectives.',
-    toolsUsed: ['Jira', 'Confluence', 'Monday.com', 'Miro'],
-    timeline: '6 months',
-    results: [
-      'Increased project delivery speed by 40%',
-      'Improved sprint predictability from 60% to 92%',
-      'Reduced cross-team dependencies bottlenecks by 50%'
-    ],
-    lessonsLearned: [
-      'Cultural change is harder than tool implementation',
-      'Agile must be adapted to the organization, not followed blindly',
-      'Continuous leadership support is vital for transformation success'
-    ],
-    achievements: ['Successfully certified 3 internal Scrum Masters', 'Created an internal Agile playbook'],
-    challenges: 'Overcoming resistance to change from veteran team members required significant one-on-one coaching and demonstrating quick wins through the pilot program.',
-    businessImpact: 'Faster time-to-market for internal tools and significantly higher team morale and engagement scores.',
-    skillsDemonstrated: ['Agile Coaching', 'Jira Administration', 'Change Management', 'Scrum', 'Cross-functional Leadership'],
-    metrics: [
-      { value: '40%', label: 'Faster Delivery' },
-      { value: '92%', label: 'Sprint Predictability' },
-      { value: '5', label: 'Teams Transitioned' }
-    ],
-    githubUrl: '#',
-    liveUrl: '#',
-    docsUrl: '#',
-    galleryImages: [],
-    dashboardEmbed: ''
-  },
+  // {
+  //   id: 'agile-pm-framework',
+  //   title: 'Agile Project Management Framework Implementation',
+  //   category: 'Project Management',
+  //   thumbnail: '',
+  //   technologies: ['Jira', 'Confluence', 'Monday.com', 'Scrum'],
+  //   shortDescription: 'Led the organizational transition from waterfall to agile methodologies, increasing delivery speed by 40%.',
+  //   description: 'Spearheaded the Agile transformation for a 50-person operations and IT department. Replaced fragmented tracking tools with a unified Jira/Confluence ecosystem, established Scrum ceremonies, and coached teams on Agile best practices.',
+  //   problem: 'Projects were consistently delivered late and over budget due to rigid waterfall methodologies, lack of cross-functional communication, and poor visibility into resource allocation.',
+  //   objectives: [
+  //     'Transition 5 teams from waterfall to Scrum/Kanban',
+  //     'Implement a standardized Jira workflow across all teams',
+  //     'Improve project delivery speed and predictability',
+  //     'Enhance cross-departmental collaboration'
+  //   ],
+  //   approach: 'Adopted a phased approach, starting with a single pilot team. Conducted comprehensive Agile training. Configured Jira boards tailored to each team\'s specific needs while maintaining standardized reporting roll-ups for management.',
+  //   implementation: 'Configured complex Jira workflows with automated transitions, integrated Confluence for documentation, and set up advanced roadmaps for portfolio management. Facilitated daily stand-ups, sprint planning, and retrospectives.',
+  //   toolsUsed: ['Jira', 'Confluence', 'Monday.com', 'Miro'],
+  //   timeline: '6 months',
+  //   results: [
+  //     'Increased project delivery speed by 40%',
+  //     'Improved sprint predictability from 60% to 92%',
+  //     'Reduced cross-team dependencies bottlenecks by 50%'
+  //   ],
+  //   lessonsLearned: [
+  //     'Cultural change is harder than tool implementation',
+  //     'Agile must be adapted to the organization, not followed blindly',
+  //     'Continuous leadership support is vital for transformation success'
+  //   ],
+  //   achievements: ['Successfully certified 3 internal Scrum Masters', 'Created an internal Agile playbook'],
+  //   challenges: 'Overcoming resistance to change from veteran team members required significant one-on-one coaching and demonstrating quick wins through the pilot program.',
+  //   businessImpact: 'Faster time-to-market for internal tools and significantly higher team morale and engagement scores.',
+  //   skillsDemonstrated: ['Agile Coaching', 'Jira Administration', 'Change Management', 'Scrum', 'Cross-functional Leadership'],
+  //   metrics: [
+  //     { value: '40%', label: 'Faster Delivery' },
+  //     { value: '92%', label: 'Sprint Predictability' },
+  //     { value: '5', label: 'Teams Transitioned' }
+  //   ],
+  //   githubUrl: '#',
+  //   liveUrl: '#',
+  //   docsUrl: '#',
+  //   galleryImages: [],
+  //   dashboardEmbed: ''
+  // },
   {
     id: 'customer-success-optimization',
     title: 'Customer Success Process Optimization',
@@ -247,51 +247,51 @@ const PROJECTS = [
     galleryImages: [],
     dashboardEmbed: ''
   },
-  {
-    id: 'supply-chain-reengineering',
-    title: 'Supply Chain Process Reengineering',
-    category: 'Process Improvement',
-    thumbnail: '',
-    technologies: ['SAP', 'Power BI', 'Lean Six Sigma', 'Excel'],
-    shortDescription: 'Overhauled inventory management processes, reducing stockouts by 30% and decreasing holding costs.',
-    description: 'Led a cross-functional initiative to reengineer the end-to-end supply chain process, focusing on inventory optimization, vendor management, and demand forecasting.',
-    problem: 'The company faced frequent stockouts of critical items while simultaneously carrying excess inventory of slow-moving goods, resulting in high holding costs and lost sales.',
-    objectives: [
-      'Reduce stockout incidents by 25%',
-      'Decrease total inventory holding costs by 15%',
-      'Implement a data-driven demand forecasting model',
-      'Standardize vendor performance evaluation'
-    ],
-    approach: 'Applied DMAIC (Define, Measure, Analyze, Improve, Control) methodology. Analyzed historical sales data to classify inventory (ABC analysis). Collaborated with procurement and sales to redesign the forecasting process.',
-    implementation: 'Developed a dynamic forecasting model in Excel/Power BI based on historical trends and seasonality. Adjusted SAP reorder points and safety stock levels. Created a vendor scorecard dashboard to track lead times and quality.',
-    toolsUsed: ['SAP ERP', 'Power BI', 'Advanced Excel', 'Visio', 'Minitab'],
-    timeline: '7 months',
-    results: [
-      'Reduced stockouts by 32%',
-      'Decreased inventory holding costs by 18%',
-      'Improved supplier on-time delivery from 75% to 92%'
-    ],
-    lessonsLearned: [
-      'Data accuracy in the ERP is the foundation of any supply chain improvement',
-      'Sales forecasting requires qualitative input from reps, not just historical data',
-      'Regular vendor communication significantly improves performance'
-    ],
-    achievements: ['Implemented a Just-In-Time (JIT) system for top 20% of SKUs', 'Created a standardized weekly S&OP (Sales and Operations Planning) meeting'],
-    challenges: 'Reconciling discrepancies between physical inventory counts and system records required a massive initial auditing effort before new processes could be trusted.',
-    businessImpact: 'Improved cash flow by freeing up capital tied in excess inventory and increased revenue by ensuring product availability during peak seasons.',
-    skillsDemonstrated: ['Lean Six Sigma', 'Supply Chain Management', 'Data Analysis', 'Cross-functional Collaboration', 'ERP Optimization'],
-    metrics: [
-      { value: '32%', label: 'Fewer Stockouts' },
-      { value: '18%', label: 'Cost Reduction' },
-      { value: '92%', label: 'Vendor Reliability' }
-    ],
-    githubUrl: '#',
-    liveUrl: '#',
-    docsUrl: '#',
-    galleryImages: [],
-    dashboardEmbed: ''
-  }
-];
+//   {
+//     id: 'supply-chain-reengineering',
+//     title: 'Supply Chain Process Reengineering',
+//     category: 'Process Improvement',
+//     thumbnail: '',
+//     technologies: ['SAP', 'Power BI', 'Lean Six Sigma', 'Excel'],
+//     shortDescription: 'Overhauled inventory management processes, reducing stockouts by 30% and decreasing holding costs.',
+//     description: 'Led a cross-functional initiative to reengineer the end-to-end supply chain process, focusing on inventory optimization, vendor management, and demand forecasting.',
+//     problem: 'The company faced frequent stockouts of critical items while simultaneously carrying excess inventory of slow-moving goods, resulting in high holding costs and lost sales.',
+//     objectives: [
+//       'Reduce stockout incidents by 25%',
+//       'Decrease total inventory holding costs by 15%',
+//       'Implement a data-driven demand forecasting model',
+//       'Standardize vendor performance evaluation'
+//     ],
+//     approach: 'Applied DMAIC (Define, Measure, Analyze, Improve, Control) methodology. Analyzed historical sales data to classify inventory (ABC analysis). Collaborated with procurement and sales to redesign the forecasting process.',
+//     implementation: 'Developed a dynamic forecasting model in Excel/Power BI based on historical trends and seasonality. Adjusted SAP reorder points and safety stock levels. Created a vendor scorecard dashboard to track lead times and quality.',
+//     toolsUsed: ['SAP ERP', 'Power BI', 'Advanced Excel', 'Visio', 'Minitab'],
+//     timeline: '7 months',
+//     results: [
+//       'Reduced stockouts by 32%',
+//       'Decreased inventory holding costs by 18%',
+//       'Improved supplier on-time delivery from 75% to 92%'
+//     ],
+//     lessonsLearned: [
+//       'Data accuracy in the ERP is the foundation of any supply chain improvement',
+//       'Sales forecasting requires qualitative input from reps, not just historical data',
+//       'Regular vendor communication significantly improves performance'
+//     ],
+//     achievements: ['Implemented a Just-In-Time (JIT) system for top 20% of SKUs', 'Created a standardized weekly S&OP (Sales and Operations Planning) meeting'],
+//     challenges: 'Reconciling discrepancies between physical inventory counts and system records required a massive initial auditing effort before new processes could be trusted.',
+//     businessImpact: 'Improved cash flow by freeing up capital tied in excess inventory and increased revenue by ensuring product availability during peak seasons.',
+//     skillsDemonstrated: ['Lean Six Sigma', 'Supply Chain Management', 'Data Analysis', 'Cross-functional Collaboration', 'ERP Optimization'],
+//     metrics: [
+//       { value: '32%', label: 'Fewer Stockouts' },
+//       { value: '18%', label: 'Cost Reduction' },
+//       { value: '92%', label: 'Vendor Reliability' }
+//     ],
+//     githubUrl: '#',
+//     liveUrl: '#',
+//     docsUrl: '#',
+//     galleryImages: [],
+//     dashboardEmbed: ''
+//   }
+// ];//
 
 const CERTIFICATIONS = [
   {
