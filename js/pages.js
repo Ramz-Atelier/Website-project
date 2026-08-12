@@ -347,7 +347,7 @@ function renderContact() {
             ${createContactItem('mail', 'Email', c.email, `mailto:${c.email}`)}
             ${createContactItem('map-pin', 'Location', c.location)}
             ${createContactItem('linkedin', 'LinkedIn', 'linkedin.com/in/thulasiram-r', c.linkedin)}
-            ${createContactItem('github', 'GitHub', 'github.com/ProjectManager-IND', c.github)}
+            ${createContactItem('github', 'GitHub', 'github.com/Ramz-Atelier', c.github)}
           </div>
           
           <div class="card contact-form-container reveal">
