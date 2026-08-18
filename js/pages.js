@@ -48,7 +48,7 @@ function renderHome() {
             <div class="profile-actions">
               <a href="#projects" class="btn-primary-full">View Projects &rarr;</a>
               <div class="btn-group-row">
-                <a href="assets/resume/resume.pdf" target="_blank" class="btn-outline">Resume &darr;</a>
+                <a href="assets/resume/Thulasiram Rajendran_PM.pdf" target="_blank" class="btn-outline">Resume &darr;</a>
                 <a href="#contact" class="btn-outline">Contact</a>
               </div>
             </div>
