@@ -26,6 +26,88 @@ const PROFILE = {
 
 const PROJECTS = [
   {
+  id: 'client-side-data-transmission-module',
+  title: 'Client-Side Data Transmission Module Upgrade',
+  category: 'Technical Improvement',
+  thumbnail: '',
+  technologies: ['Node.js', 'APIs', 'Azure', 'ClickHouse', 'SQL', 'MD5', 'Checksum', '7-Zip', 'Excel', 'Adobe Acrobat'],
+
+  shortDescription: 'Coordinated a technical improvement initiative to address recurring file corruption during client-side data transmission by replacing a legacy PHP module with a Node.js-based solution.',
+
+  description: 'Coordinated a cross-functional technical improvement initiative after identifying recurring file corruption during client-side file transmission. After investigating client queries and collecting error data, the issue was traced to the existing legacy PHP-based upload module. Worked with Engineering, Product, and the Technical Architect to evaluate the underlying issue, validate an alternative Node.js-based implementation, coordinate extensive testing, document the changes, and support the production rollout.',
+
+  problem: 'Multiple clients experienced file corruption during transmission, resulting in delivery issues, additional follow-ups, and potential SLA impact. Initial investigation showed that the issue was not isolated to a single file or client, leading to a deeper investigation of the client-side upload module.',
+
+  objectives: [
+    'Identify the root cause of recurring file corruption during transmission',
+    'Establish a reliable method to validate file integrity before and after transmission',
+    'Identify and implement a suitable alternative to the legacy PHP-based module',
+    'Validate the new transmission workflow through structured testing',
+    'Improve file delivery reliability and prevent recurring transmission issues'
+  ],
+
+  approach: 'Investigated an initial file corruption incident by validating the issue with the client and analysing the affected file. When similar incidents were reported by multiple clients, expanded the investigation to identify a common underlying cause. Collected error data, documented findings, compared file checksums at input and output stages, replicated reported issues, and collaborated with Engineering and the Technical Architect to identify the legacy PHP module as the underlying cause. Node.js and new APIs were then evaluated as the replacement approach.',
+
+  implementation: 'Coordinated with Operations, Engineering, Product, and the Technical Architect to implement and validate the updated transmission module. Supported checksum-based validation at input and output levels, replicated reported errors, coordinated multiple rounds of testing, identified implementation gaps, validated the Node.js-based solution, documented the changes, and supported the production rollout.',
+
+  toolsUsed: ['Node.js', 'APIs', 'Azure', 'ClickHouse', 'SQL', 'MD5', 'Checksum', '7-Zip', 'Excel', 'Adobe Acrobat'],
+
+  timeline: '9 months',
+
+  results: [
+    'Eliminated recurring file corruption issues following implementation',
+    'Achieved reliable file delivery with no further reported transmission errors',
+    'Improved file upload performance, reducing upload duration by approximately 50%',
+    'Improved delivery reliability and supported consistent SLA achievement'
+  ],
+
+  lessonsLearned: [
+    'Recurring customer issues should be investigated for systemic causes rather than treated as isolated incidents',
+    'File integrity validation at multiple stages can help identify where data transmission issues occur',
+    'Structured testing and evidence-based root-cause analysis are critical when replacing legacy components',
+    'Early collaboration between Operations, Engineering, Product, and technical leadership helps accelerate complex issue resolution'
+  ],
+
+  achievements: [
+    'Identified a recurring systemic issue affecting multiple clients',
+    'Helped establish checksum-based validation to isolate the source of file corruption',
+    'Supported the transition from a legacy PHP module to a Node.js-based solution',
+    'Successfully supported rollout with no further reported file corruption issues'
+  ],
+
+  challenges: 'The investigation required reproducing client-reported errors, obtaining and comparing source files, and tracking checksums at both input and output stages to isolate where file corruption occurred. Establishing consistent test conditions and identifying the underlying cause required multiple rounds of investigation and testing.',
+
+  businessImpact: 'The module upgrade significantly improved file transmission reliability, reducing client-facing delivery issues and follow-up communication. It helped ensure more consistent and timely file delivery while supporting SLA performance and improving the overall client experience.',
+
+  skillsDemonstrated: [
+    'Problem Identification',
+    'Root Cause Analysis',
+    'Requirements Gathering',
+    'Stakeholder Management',
+    'Cross-functional Collaboration',
+    'Technical Project Coordination',
+    'Issue Management',
+    'Testing & Validation',
+    'Process Improvement',
+    'Change Management',
+    'Implementation Support',
+    'Documentation'
+  ],
+
+  metrics: [
+    { value: '9M', label: 'Project Timeline' },
+    { value: '50%', label: 'Faster File Upload' },
+    { value: '0', label: 'Reported Errors After Rollout' },
+    { value: '98%', label: 'SLA Achievement' }
+  ],
+
+  githubUrl: '#',
+  liveUrl: '#',
+  docsUrl: '#',
+  galleryImages: [],
+  dashboardEmbed: ''
+},
+  {
   id: 'b2b-digital-content-delivery-overseas',
   title: 'B2B Digital Content Delivery - Overseas',
   category: 'Digital Content Delivery',
@@ -230,7 +312,7 @@ const PROJECTS = [
     title: 'Customer Success Process Optimization',
     category: 'Process Improvement',
     thumbnail: '',
-    technologies: ['Salesforce', 'HubSpot', 'Zendesk', 'Miro'],
+    technologies: ['Outlook', 'HubSpot', 'Freshdesk', 'Google Sheets'],
     shortDescription: 'Redesigned the customer onboarding journey, reducing churn by 25% and increasing CSAT scores.',
     description: 'Comprehensively mapped and redesigned the customer onboarding and support journey. Implemented automated touchpoints, standardized playbooks, and integrated CRM tools to provide a seamless customer experience.',
     problem: 'High customer churn rate during the first 90 days due to a disjointed onboarding process, inconsistent communication, and a lack of proactive support.',
@@ -269,51 +351,51 @@ const PROJECTS = [
     galleryImages: [],
     dashboardEmbed: ''
   },
-  {
-    id: 'ai-document-processing',
-    title: 'AI-Powered Document Processing Pipeline',
-    category: 'AI',
-    thumbnail: '',
-    technologies: ['Python', 'OpenAI API', 'Azure AI', 'OCR'],
-    shortDescription: 'Implemented an AI solution to extract and categorize data from unstructured PDFs, replacing a 5-person manual entry team.',
-    description: 'Designed and deployed an intelligent document processing system that utilizes OCR and Large Language Models (LLMs) to automatically extract key information from unstructured invoices, contracts, and forms.',
-    problem: 'A team of 5 data entry clerks spent their entire week manually reading PDFs and typing information into a database, leading to high operational costs and frequent human errors.',
-    objectives: [
-      'Automate the extraction of data from unstructured PDFs',
-      'Achieve >95% accuracy in data extraction',
-      'Reduce processing time per document from 5 minutes to <10 seconds',
-      'Integrate the extracted data directly into the ERP'
-    ],
-    approach: 'Evaluated multiple OCR and AI solutions. Developed a prototype using Python and the OpenAI API. Created a validation pipeline where low-confidence extractions are flagged for human review.',
-    implementation: 'Used Azure Computer Vision for robust OCR to extract text from images/PDFs. Passed the raw text to a fine-tuned LLM (via API) with strict JSON schema prompts to extract specific entities (names, amounts, dates). Built a Python backend to orchestrate the flow and push to the ERP via REST API.',
-    toolsUsed: ['Python', 'Azure Form Recognizer', 'OpenAI API', 'FastAPI', 'Docker'],
-    timeline: '4 months',
-    results: [
-      'Automated processing of 10,000+ documents per month',
-      'Achieved 97% extraction accuracy',
-      'Reduced processing time by 98%',
-      'Reallocated 5 staff members to higher-value analytical roles'
-    ],
-    lessonsLearned: [
-      'Prompt engineering and JSON schema enforcement are critical for reliable LLM outputs',
-      'A human-in-the-loop fallback mechanism is mandatory for edge cases',
-      'OCR quality heavily dictates the downstream AI performance'
-    ],
-    achievements: ['Processed first 50,000 documents with zero critical errors', 'Presented solution at company-wide innovation summit'],
-    challenges: 'Handling highly varied document layouts (e.g., hundreds of different vendor invoice formats) required moving away from template-based OCR to semantic AI extraction.',
-    businessImpact: 'Saved approximately $250k annually in operational costs and accelerated invoice processing times, improving vendor relationships.',
-    skillsDemonstrated: ['AI Integration', 'Python Backend Development', 'Prompt Engineering', 'API Design', 'Process Automation'],
-    metrics: [
-      { value: '97%', label: 'Extraction Accuracy' },
-      { value: '98%', label: 'Time Saved' },
-      { value: '$250k', label: 'Annual Savings' }
-    ],
-    githubUrl: '#',
-    liveUrl: '#',
-    docsUrl: '#',
-    galleryImages: [],
-    dashboardEmbed: ''
-  },
+  // {
+  //   id: 'ai-document-processing',
+  //   title: 'AI-Powered Document Processing Pipeline',
+  //   category: 'AI',
+  //   thumbnail: '',
+  //   technologies: ['Python', 'OpenAI API', 'Azure AI', 'OCR'],
+  //   shortDescription: 'Implemented an AI solution to extract and categorize data from unstructured PDFs, replacing a 5-person manual entry team.',
+  //   description: 'Designed and deployed an intelligent document processing system that utilizes OCR and Large Language Models (LLMs) to automatically extract key information from unstructured invoices, contracts, and forms.',
+  //   problem: 'A team of 5 data entry clerks spent their entire week manually reading PDFs and typing information into a database, leading to high operational costs and frequent human errors.',
+  //   objectives: [
+  //     'Automate the extraction of data from unstructured PDFs',
+  //     'Achieve >95% accuracy in data extraction',
+  //     'Reduce processing time per document from 5 minutes to <10 seconds',
+  //     'Integrate the extracted data directly into the ERP'
+  //   ],
+  //   approach: 'Evaluated multiple OCR and AI solutions. Developed a prototype using Python and the OpenAI API. Created a validation pipeline where low-confidence extractions are flagged for human review.',
+  //   implementation: 'Used Azure Computer Vision for robust OCR to extract text from images/PDFs. Passed the raw text to a fine-tuned LLM (via API) with strict JSON schema prompts to extract specific entities (names, amounts, dates). Built a Python backend to orchestrate the flow and push to the ERP via REST API.',
+  //   toolsUsed: ['Python', 'Azure Form Recognizer', 'OpenAI API', 'FastAPI', 'Docker'],
+  //   timeline: '4 months',
+  //   results: [
+  //     'Automated processing of 10,000+ documents per month',
+  //     'Achieved 97% extraction accuracy',
+  //     'Reduced processing time by 98%',
+  //     'Reallocated 5 staff members to higher-value analytical roles'
+  //   ],
+  //   lessonsLearned: [
+  //     'Prompt engineering and JSON schema enforcement are critical for reliable LLM outputs',
+  //     'A human-in-the-loop fallback mechanism is mandatory for edge cases',
+  //     'OCR quality heavily dictates the downstream AI performance'
+  //   ],
+  //   achievements: ['Processed first 50,000 documents with zero critical errors', 'Presented solution at company-wide innovation summit'],
+  //   challenges: 'Handling highly varied document layouts (e.g., hundreds of different vendor invoice formats) required moving away from template-based OCR to semantic AI extraction.',
+  //   businessImpact: 'Saved approximately $250k annually in operational costs and accelerated invoice processing times, improving vendor relationships.',
+  //   skillsDemonstrated: ['AI Integration', 'Python Backend Development', 'Prompt Engineering', 'API Design', 'Process Automation'],
+  //   metrics: [
+  //     { value: '97%', label: 'Extraction Accuracy' },
+  //     { value: '98%', label: 'Time Saved' },
+  //     { value: '$250k', label: 'Annual Savings' }
+  //   ],
+  //   githubUrl: '#',
+  //   liveUrl: '#',
+  //   docsUrl: '#',
+  //   galleryImages: [],
+  //   dashboardEmbed: ''
+  // },
 //   {
 //     id: 'supply-chain-reengineering',
 //     title: 'Supply Chain Process Reengineering',
