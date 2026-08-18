@@ -815,6 +815,17 @@ const INTERESTS = [
 ];
 
 const INSIGHTS = [
+   {
+    id: 'insight-11',
+    title: "Great operations are almost invisible",
+    date: 'Aug 12, 2026',
+    category: 'Operations',
+    excerpt: "Ever noticed... Nobody talks about operations when everything is running smoothly.",
+    readTime: '1 min read',
+    linkedinUrl: 'https://www.linkedin.com/posts/thulasiram-r_operations-operationalexcellence-leadership-share-7490316585467789312-Qzsq/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQuwJoBWoJyUO66R5lvpVTqXShvnMdl0b4',
+    icon: 'clipboard-check',
+    thumbnail: 'assets/images/greatoperation.png'
+  },
   {
     id: 'insight-1',
     title: "It'll only take 5 minute",
