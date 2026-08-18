@@ -26,6 +26,197 @@ const PROFILE = {
 
 const PROJECTS = [
   {
+  id: 'pdf-pre-processing-dashboard',
+  title: 'PDF Pre-processing & Enhancement Dashboard',
+  category: 'Process Optimization',
+  thumbnail: '',
+  technologies: [
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'Next.js',
+    'Adobe Acrobat',
+    'PDF Enhancer',
+    'Apago',
+    'Google Sheets',
+    'Google Drive',
+    'Gmail',
+    'Google Chat',
+    'Google Meet'
+  ],
+
+  shortDescription: 'Coordinated the development of a configurable PDF pre-processing dashboard that standardized file enhancements across 1,562 titles while reducing manual processing effort.',
+
+  description: 'Coordinated a process optimization initiative to reduce repetitive manual intervention required to correct and enhance PDF files before publishing. The project involved identifying recurring PDF quality issues, gathering patterns and corresponding fixes, and collaborating with Engineering, Frontend, Backend, and technical stakeholders to create a centralized dashboard for configuring title-specific preprocessing methods. The solution enabled different PDF enhancement rules to be applied based on identified file characteristics and allowed Operations to manage future updates through the dashboard.',
+
+  problem: 'Different PDF files required different preprocessing and enhancement methods depending on their format and potential quality issues. Operations teams were manually identifying problems, reprocessing files, and repeatedly using tools such as Adobe Acrobat to achieve the required output. This increased processing time and created repetitive manual effort.',
+
+  objectives: [
+    'Reduce manual intervention required for PDF preprocessing and enhancement',
+    'Identify and standardize recurring PDF problems and their corresponding fixes',
+    'Create a centralized dashboard for managing title-specific preprocessing methods',
+    'Enable configurable processing rules for different file requirements',
+    'Improve the consistency and speed of producing enhanced PDF outputs'
+  ],
+
+  approach: 'Collaborated with clients and Operations teams to identify recurring PDF quality issues and gather patterns across different file types. Documented the problems and corresponding enhancement methods, identified the need for a configurable dashboard, and worked with Engineering, Frontend, Backend, and technical stakeholders to translate the requirements into a scalable workflow. Coordinated testing, identified gaps, provided feedback, and supported the rollout.',
+
+  implementation: 'The Engineering and Frontend teams developed a dashboard that enabled titles with specific PDF problems to be onboarded with customized preprocessing methods. Different enhancement rules could be configured for individual title requirements, allowing the appropriate preprocessing workflow to be applied automatically. Supported multiple rounds of testing, validated output quality, tracked processing failures and results, provided improvement feedback, and ensured the dashboard could be updated for future requirements.',
+
+  toolsUsed: [
+    'JavaScript',
+    'TypeScript',
+    'React',
+    'Next.js',
+    'Adobe Acrobat',
+    'PDF Enhancer',
+    'Apago',
+    'Google Sheets',
+    'Google Drive',
+    'Gmail',
+    'Google Chat',
+    'Google Meet'
+  ],
+
+  timeline: '3 months',
+
+  results: [
+    'Enabled customized preprocessing methods across 1,562 titles',
+    'Reduced approximately 2 hours of manual processing effort per day',
+    'Reduced dependency on Adobe Acrobat usage by approximately 35%',
+    'Reduced manual intervention required for recurring PDF processing issues',
+    'Improved consistency and speed of producing enhanced PDF outputs'
+  ],
+
+  lessonsLearned: [
+    'Understanding recurring problem patterns is essential before designing scalable automation',
+    'Configurable workflows provide greater flexibility when different titles require different processing rules',
+    'Providing clear examples and output expectations helps technical teams implement complex processing logic more effectively',
+    'Post-implementation visibility into processing failures and results is important for continuous improvement'
+  ],
+
+  achievements: [
+    'Successfully coordinated the implementation of a configurable PDF preprocessing workflow',
+    'Enabled 1,562 titles with customized preprocessing methods',
+    'Reduced approximately 2 hours of daily manual processing effort',
+    'Created a solution that allowed future preprocessing rules to be updated without redesigning the entire workflow'
+  ],
+
+  challenges: 'The project involved identifying a wide variety of PDF problems and determining the appropriate enhancement method for each scenario. Additional challenges included coordinating multiple stakeholders, translating varied processing requirements into configurable logic, validating different output scenarios, and tracking preprocessing failures and their causes.',
+
+  businessImpact: 'The solution reduced repetitive manual effort involved in PDF reprocessing and improved the speed and consistency of producing enhanced files. By centralizing preprocessing methods in a configurable dashboard, the workflow became more adaptable to new title-specific requirements while reducing dependency on manual PDF correction tools.',
+
+  skillsDemonstrated: [
+    'Requirements Gathering',
+    'Process Analysis',
+    'Project Coordination',
+    'Stakeholder Management',
+    'Cross-functional Collaboration',
+    'Workflow Design',
+    'Process Optimization',
+    'Automation Planning',
+    'Testing & Validation',
+    'Issue Management',
+    'Product Collaboration',
+    'Implementation Support',
+    'Continuous Improvement'
+  ],
+
+  metrics: [
+    { value: '1,562', label: 'Titles Enabled' },
+    { value: '2h', label: 'Manual Effort Saved/Day' },
+    { value: '35%', label: 'Adobe Acrobat Usage Reduction' },
+    { value: '3M', label: 'Project Timeline' }
+  ],
+
+  githubUrl: '#',
+  liveUrl: '#',
+  docsUrl: '#',
+  galleryImages: [],
+  dashboardEmbed: ''
+},
+  {
+  id: 'file-management-schedule-dashboard',
+  title: 'File Management & Delivery Schedule Dashboard',
+  category: 'Process Optimization',
+  thumbnail: '',
+  technologies: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Google Sheets', 'Google Drive', 'Gmail', 'Google Chat', 'Google Meet'],
+
+  shortDescription: 'Coordinated the development of a centralized file management and delivery schedule dashboard, consolidating fragmented schedules and enabling automated workflow triggers across 58 accounts.',
+
+  description: 'Coordinated a process optimization initiative to centralize file management and delivery schedules received from multiple clients across FTP, email, Google Sheets, and calendars. The project introduced a centralized dashboard with predefined delivery schedules, file naming and folder rules, validation logic, and automation triggers. Worked with Operations, Engineering, Frontend, and technical stakeholders to gather requirements, define workflow logic, provide solution inputs, coordinate testing, and support rollout.',
+
+  problem: 'File delivery schedules and processing requirements were distributed across multiple tools and formats, requiring significant manual effort to monitor schedules and initiate file-processing activities. Different clients used different FTP structures, file formats, naming conventions, and release schedules, making it difficult to maintain a single source of truth and increasing the dependency on manual intervention.',
+
+  objectives: [
+    'Create a centralized view of client file delivery schedules and processing requirements',
+    'Reduce manual effort involved in monitoring schedules and initiating file workflows',
+    'Standardize file naming, folder, and validation requirements',
+    'Enable automation triggers based on predefined schedule and file-processing rules',
+    'Improve operational visibility and reduce dependency on multiple tools'
+  ],
+
+  approach: 'Mapped the existing workflow across FTP, email, Google Sheets, and calendars to identify gaps and repetitive manual activities. Defined the requirement for a centralized dashboard and collaborated with Engineering and Frontend teams to translate operational requirements into dashboard functionality. Provided workflow ideas, sample scenarios, and requirements for automation triggers, file validation, naming conventions, and delivery schedules. Coordinated testing, provided feedback, supported feature improvements, and assisted with rollout.',
+
+  implementation: 'The Engineering and Frontend teams developed a centralized dashboard containing delivery schedule information and predefined workflow rules. Each magazine entry could include trigger dates, release dates, filename formats, folder formats, and file validation checks, allowing automation triggers to be linked to individual records. Supported testing of the workflow and validation logic, identified gaps, provided feedback and feature improvement suggestions, and supported successful onboarding of new schedules.',
+
+  toolsUsed: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Google Sheets', 'Google Drive', 'Gmail', 'Google Chat', 'Google Meet'],
+
+  timeline: '2 months',
+
+  results: [
+    'Enabled workflow logic and automation triggers across 58 accounts',
+    'Configured 5,771 schedule records with predefined processing logic',
+    'Reduced approximately 4 hours of manual effort per day',
+    'Achieved approximately 95% improvement in operational efficiency',
+    'Successfully onboarded new delivery schedules into the centralized workflow'
+  ],
+
+  lessonsLearned: [
+    'Providing clear samples and wireframes can significantly improve communication between business and Frontend teams',
+    'Detailed workflow rules and validation scenarios are important when designing automation around variable client requirements',
+    'Centralizing fragmented operational information improves visibility and reduces dependency on multiple tools'
+  ],
+
+  achievements: [
+    'Successfully coordinated the development and rollout of a centralized file management and delivery schedule dashboard',
+    'Enabled automation logic and triggers across 58 accounts and 5,771 records',
+    'Reduced approximately 4 hours of daily manual effort'
+  ],
+
+  challenges: 'The project required coordination with multiple stakeholders based on their availability while also defining complex file validation rules, filename filters, and automation scenarios. Additional challenges included tracking automation outcomes and identifying reasons for automation failures across varying client requirements.',
+
+  businessImpact: 'The centralized dashboard created a single source of operational information for file delivery schedules, processing rules, and automation triggers. It reduced manual intervention and dependency on multiple tools, improved workflow visibility, and enabled the Operations team to manage a larger volume of delivery schedules more efficiently.',
+
+  skillsDemonstrated: [
+    'Requirements Gathering',
+    'Process Mapping',
+    'Project Coordination',
+    'Stakeholder Management',
+    'Cross-functional Collaboration',
+    'Workflow Design',
+    'Process Optimization',
+    'Automation Planning',
+    'Testing & Validation',
+    'Issue Management',
+    'Product Collaboration',
+    'Implementation Support'
+  ],
+
+  metrics: [
+    { value: '58', label: 'Accounts Enabled' },
+    { value: '5,771', label: 'Records Configured' },
+    { value: '4h', label: 'Manual Effort Saved/Day' },
+    { value: '95%', label: 'Efficiency Improvement' }
+  ],
+
+  githubUrl: '#',
+  liveUrl: '#',
+  docsUrl: '#',
+  galleryImages: [],
+  dashboardEmbed: ''
+},
+  {
   id: 'client-side-data-transmission-module',
   title: 'Client-Side Data Transmission Module Upgrade',
   category: 'Technical Improvement',
@@ -443,6 +634,17 @@ const PROJECTS = [
 ];
 
 const CERTIFICATIONS = [
+   {
+    id: 'pmp',
+    title: 'Project Initiation: Starting a Successful Project',
+    organization: 'Google',
+    date: 'Jun 2026',
+    credentialId: 'K6XKZ8N2GMQY',
+    category: 'Project Management',
+    skills: ['Project Management', 'Cost-Benefit Analysis', 'RACI', 'Stakeholder Management', 'Scope Management', 'Asana'],
+    icon:'pie-chart',
+    verifyUrl: '#'
+  },
   {
     id: 'pmp',
     title: 'Foundations of Project Management',
