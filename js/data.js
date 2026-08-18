@@ -26,6 +26,85 @@ const PROFILE = {
 
 const PROJECTS = [
   {
+  id: 'b2b-digital-content-delivery-overseas',
+  title: 'B2B Digital Content Delivery - Overseas',
+  category: 'Digital Content Delivery',
+  thumbnail: '',
+  technologies: ['AWS', 'JavaScript', 'Webhooks', 'FileZilla'],
+
+  shortDescription: 'Coordinated the transition from manual to automated digital content delivery for B2B clients, enabling timely delivery across multiple time zones and eliminating manual intervention.',
+
+  description: 'Coordinated a cross-functional initiative to streamline the delivery of digital magazine and newspaper editions to overseas B2B clients. The project focused on meeting strict delivery timelines across different time zones by replacing manual file delivery with an automated workflow from AWS to client platforms through webhooks. The initiative involved requirements analysis, stakeholder coordination, solution discussions with Engineering, testing, rollout, and delivery tracking.',
+
+  problem: 'Digital editions needed to be delivered to B2B clients immediately after publication so they could be made available across airport lounges and airline fleets. The existing manual delivery process was affected by different time zones, working-hour constraints, file naming and format requirements, and the risk of delays or manual errors.',
+
+  objectives: [
+    'Enable timely delivery of digital magazine and newspaper editions to overseas B2B clients',
+    'Eliminate manual intervention in the content delivery process',
+    'Support delivery across different time zones and working schedules',
+    'Standardize the required digital file format and delivery workflow',
+    'Improve delivery reliability and maintain accurate delivery records'
+  ],
+
+  approach: 'Analysed the delivery requirements and time constraints associated with overseas B2B clients and identified the limitations of the manual process. Shared the problem statement with Engineering, collaborated on the solution approach, established PDF as the required delivery format, and supported the design of an automated delivery workflow using AWS and webhooks. Coordinated testing, issue resolution, rollout, and post-implementation tracking.',
+
+  implementation: 'Coordinated with Operations, Engineering, QA, Product, external stakeholders, and management to implement an automated digital content delivery workflow. The solution enabled digital files to be automatically delivered from AWS to the client through webhooks after publication. Supported validation of file format and naming requirements, coordinated testing, addressed implementation issues, and maintained a dashboard to track delivery status and maintain operational records.',
+
+  toolsUsed: ['AWS', 'JavaScript', 'Webhooks', 'FileZilla'],
+
+  timeline: '6 months',
+
+  results: [
+    'Eliminated manual effort involved in routine digital content delivery',
+    'Enabled more consistent and timely delivery across different time zones',
+    'Reduced dependency on manual processing and associated errors',
+    'Improved client experience through reliable digital content delivery',
+    'Supported business growth and contributed to additional client deals'
+  ],
+
+  lessonsLearned: [
+    'Time-sensitive projects require clear requirements and early identification of operational dependencies',
+    'Understanding client delivery constraints is essential when designing an automated workflow',
+    'Cross-functional collaboration between Operations, Engineering, QA, and external stakeholders is critical for successful implementation',
+    'Maintaining delivery records and visibility after implementation helps monitor reliability and identify improvement opportunities'
+  ],
+
+  achievements: [
+    'Successfully coordinated the transition from manual to automated digital content delivery',
+    'Established a delivery tracking dashboard to maintain operational visibility and records',
+    'Supported reliable content delivery for time-sensitive overseas B2B requirements'
+  ],
+
+  challenges: 'The project required delivery within strict time constraints while accounting for multiple time zones, varying working hours, client platform requirements, file naming conventions, and supported file formats. Coordinating these dependencies across internal and external stakeholders was a key implementation challenge.',
+
+  businessImpact: 'The automated delivery workflow enabled timely digital content delivery to overseas B2B clients without routine manual intervention. It reduced operational dependency and errors, improved client experience, and supported the organization in delivering a more scalable solution for B2B partnerships.',
+
+  skillsDemonstrated: [
+    'Requirements Gathering & Analysis',
+    'Project Coordination',
+    'Stakeholder Management',
+    'Cross-functional Collaboration',
+    'Process Improvement',
+    'Workflow Automation',
+    'Time & Dependency Management',
+    'Testing & Issue Management',
+    'Implementation Support',
+    'Operational Reporting'
+  ],
+
+  metrics: [
+    { value: '6M', label: 'Project Timeline' },
+    { value: '0', label: 'Routine Manual Delivery Effort' },
+    { value: '24/7', label: 'Time-zone Independent Delivery' }
+  ],
+
+  githubUrl: '#',
+  liveUrl: '#',
+  docsUrl: '#',
+  galleryImages: [],
+  dashboardEmbed: ''
+},
+  {
     id: 'file-transfer-automation',
   title: 'File Transfer Workflow Automation',
   category: 'Automation',
