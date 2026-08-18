@@ -136,6 +136,106 @@ const PROJECTS = [
   dashboardEmbed: ''
 },
   {
+  id: 'new-client-onboarding-canada-french',
+  title: 'New Client Onboarding - Canada (French) 🇨🇦',
+  category: 'Client Onboarding & Implementation',
+  thumbnail: '',
+  technologies: [
+    'Google Meet',
+    'Google Sheets',
+    'FileZilla',
+    'Adobe Acrobat',
+    'Gmail',
+    'Google Docs'
+  ],
+
+  shortDescription: 'Coordinated the end-to-end onboarding of a new Canadian publishing partner, supporting the digital launch of 66+ magazine titles through structured requirements, milestone planning, cross-functional coordination, and delivery management.',
+
+  description: 'Led project coordination activities for onboarding a new publishing partner and enabling the digital publication of 70+ magazine titles across Quebec and global markets. Managed client communication, requirements gathering, milestone planning, task allocation, progress tracking, testing, issue resolution, and coordination between the client, distributor, Operations, and Engineering teams. Successfully supported the publication of 66+ titles to date.',
+
+  problem: 'A new publishing partner required onboarding and digital publication of a large portfolio of magazine titles while operating across language, file-format, scheduling, and delivery requirements. The onboarding also involved coordination between the client, distributor, and internal teams to establish reliable workflows and ensure titles were processed and published successfully.',
+
+  objectives: [
+    'Successfully onboard the new publishing partner onto the digital platform',
+    'Enable the digital publication of 70+ magazine titles',
+    'Establish clear file transfer, delivery schedule, and processing requirements',
+    'Coordinate internal teams and milestones to support timely title onboarding',
+    'Ensure successful testing, issue resolution, and publication of titles'
+  ],
+
+  approach: 'Initiated the client onboarding process by explaining the product and providing dashboard walkthroughs. Addressed the language barrier through coordination with the distributor, gathered client requirements, recommended suitable file transfer methods, collected delivery schedules, and evaluated PDF files and processing requirements. Translated the requirements into an internal project scope, allocated tasks to the Operations team, established milestones, tracked progress, documented completed milestones, coordinated testing, and maintained communication with client and internal stakeholders throughout the onboarding.',
+
+  implementation: 'Coordinated the onboarding workflow from initial client engagement through title publication. Established file transfer and delivery requirements, evaluated incoming PDF files and required processing methods, communicated project scope to internal stakeholders, and allocated processing activities to the Operations team. Monitored milestone completion, coordinated testing and issue resolution, followed up on dependencies and approvals, and supported the successful publication of 66+ titles.',
+
+  toolsUsed: [
+    'Google Meet',
+    'Google Sheets',
+    'FileZilla',
+    'Adobe Acrobat',
+    'Gmail',
+    'Google Docs'
+  ],
+
+  timeline: '6 months',
+
+  results: [
+    'Successfully onboarded a new Canadian publishing partner',
+    'Supported the digital publication of 66+ magazine titles to date',
+    'Established structured requirements, milestones, and processing workflows',
+    'Achieved 99% CAST based on the provided project metric',
+    'Contributed to a 10% increase in user engagement',
+    'Supported a 5% increase in new user sign-ups and subscription purchases'
+  ],
+
+  lessonsLearned: [
+    'Clear requirements and milestone planning are essential when coordinating large-scale client onboarding',
+    'Language and communication barriers can be managed effectively through the right stakeholder or distributor support',
+    'Defining file and naming standards early helps prevent downstream processing and delivery issues',
+    'Regular follow-ups and clear ownership of action items are critical for maintaining onboarding momentum'
+  ],
+
+  achievements: [
+    'Successfully onboarded a new strategic publishing partner',
+    'Coordinated the onboarding and publication workflow for 66+ magazine titles',
+    'Established structured milestones and task ownership across internal teams',
+    'Maintained cross-functional and client coordination throughout the six-month onboarding'
+  ],
+
+  challenges: 'The project involved a language barrier between the client and internal stakeholders, inconsistent filename and folder-name formats during the early stages, and challenges in scheduling meetings and obtaining timely approvals for action items. These were managed through distributor support, clearer requirements, structured follow-ups, and ongoing stakeholder coordination.',
+
+  businessImpact: 'The successful onboarding established the client as an important publishing partner and expanded the availability of its digital magazine portfolio across Quebec and global markets. The positive engagement and subscription outcomes also created opportunities for further collaboration, including discussions around a more interactive and feature-rich microsite.',
+
+  skillsDemonstrated: [
+    'Client Onboarding',
+    'Project Coordination',
+    'Requirements Gathering',
+    'Milestone Planning',
+    'Task Allocation',
+    'Stakeholder Management',
+    'Client Communication',
+    'Cross-functional Collaboration',
+    'Progress Tracking',
+    'Issue Management',
+    'Testing & Validation',
+    'Implementation Support',
+    'Documentation'
+  ],
+
+  metrics: [
+    { value: '66+', label: 'Titles Published' },
+    { value: '6M', label: 'Onboarding Timeline' },
+    { value: '10%', label: 'User Engagement Growth' },
+    { value: '5%', label: 'Signup & Subscription Growth' },
+    { value: '99%', label: 'CAST' }
+  ],
+
+  githubUrl: '#',
+  liveUrl: '#',
+  docsUrl: '#',
+  galleryImages: [],
+  dashboardEmbed: ''
+},
+  {
   id: 'file-management-schedule-dashboard',
   title: 'File Management & Delivery Schedule Dashboard',
   category: 'Process Optimization',
