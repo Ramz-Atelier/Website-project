@@ -26,93 +26,81 @@ const PROFILE = {
 
 const PROJECTS = [
   {
-    id: 'enterprise-workflow-automation',
-    title: 'Enterprise Workflow Automation Platform',
-    category: 'Automation',
-    thumbnail: '', 
-    technologies: ['Python', 'Selenium', 'UiPath', 'Power Automate'],
-    shortDescription: 'End-to-end automation of manual data entry and reporting processes across multiple departments, saving 200+ hours monthly.',
-    description: 'Designed and implemented a comprehensive enterprise workflow automation platform to eliminate repetitive manual tasks across the finance and operations departments. The system integrates disparate legacy systems with modern cloud APIs, utilizing robotic process automation (RPA) for UI-driven tasks and API integrations for data syncing.',
-    problem: 'The finance and operations teams were spending over 200 hours per month manually downloading reports from legacy systems, formatting them in Excel, and uploading the data to a central ERP. This process was error-prone, slow, and prevented staff from focusing on high-value analytical work.',
-    objectives: [
-      'Eliminate manual data entry between legacy systems and the ERP',
-      'Reduce report generation time from days to hours',
-      'Achieve 99.9% data accuracy',
-      'Provide real-time visibility into operational metrics'
-    ],
-    approach: 'Conducted a comprehensive process mapping exercise to identify bottlenecks. Developed a phased automation strategy starting with the most time-consuming tasks. Built modular automation scripts that could be reused across different workflows.',
-    implementation: 'Utilized Power Automate for cloud-based triggers and email parsing, UiPath for interacting with legacy desktop applications, and Python (Selenium/Pandas) for complex web scraping and data transformation. Set up robust error handling and alerting mechanisms.',
-    toolsUsed: ['Python', 'Selenium', 'UiPath', 'Power Automate', 'Pandas', 'Excel Macros'],
-    timeline: '4 months',
-    results: [
-      'Saved 240 hours of manual work per month',
-      'Reduced data entry errors by 98%',
-      'Improved report turnaround time by 85%',
-      'Enabled real-time financial reporting capabilities'
-    ],
-    lessonsLearned: [
-      'Thorough exception handling is critical for RPA resilience',
-      'Stakeholder communication during the transition phase is key to adoption',
-      'Modular code design significantly speeds up future automation projects'
-    ],
-    achievements: ['Awarded "Innovation of the Year" by the executive team', 'Successfully trained 5 team members to maintain the automations'],
-    challenges: 'Integrating with a 15-year-old legacy system with no API and dynamic UI elements required creative computer vision and OCR solutions within the RPA framework.',
-    businessImpact: 'The project resulted in an estimated annual cost savings of $120,000 and allowed the finance team to shift focus to strategic forecasting rather than data entry.',
-    skillsDemonstrated: ['Process Mapping', 'RPA Development', 'Stakeholder Management', 'Python Scripting', 'System Integration'],
-    metrics: [
-      { value: '240h', label: 'Time Saved/Month' },
-      { value: '98%', label: 'Error Reduction' },
-      { value: '$120k', label: 'Annual Savings' }
-    ],
-    githubUrl: '#',
-    liveUrl: '#',
-    docsUrl: '#',
-    galleryImages: [],
-    dashboardEmbed: ''
-  },
-  {
-    id: 'operations-analytics-dashboard',
-    title: 'Operations Analytics Dashboard',
-    category: 'Data Analytics',
-    thumbnail: '',
-    technologies: ['Power BI', 'SQL', 'Python', 'Looker Studio'],
-    shortDescription: 'Interactive BI dashboards consolidating data from 5 different sources to provide real-time operational insights.',
-    description: 'Developed a suite of interactive Power BI dashboards that consolidate fragmented operational data into a single source of truth. The project involved designing a robust ETL pipeline and creating intuitive visualizations for executive decision-making.',
-    problem: 'Leadership lacked visibility into daily operations due to data being siloed across Salesforce, Zendesk, a custom ERP, and various Excel spreadsheets. Reports took a week to compile, meaning decisions were always based on outdated information.',
-    objectives: [
-      'Create a unified data model integrating 5 distinct sources',
-      'Build automated ETL pipelines updated daily',
-      'Design interactive dashboards for different stakeholder levels (Executive, Manager, Agent)',
-      'Establish data governance and quality standards'
-    ],
-    approach: 'Started with stakeholder interviews to define critical KPIs. Designed a star-schema data warehouse model. Developed Python scripts to extract and transform data, loading it into a centralized SQL database, which then fed the Power BI dashboards.',
-    implementation: 'Built ETL pipelines using Python and Airflow, hosted on AWS. Designed the SQL database for optimal read performance. Created highly interactive Power BI reports with row-level security to ensure users only saw relevant data.',
-    toolsUsed: ['Power BI', 'SQL Server', 'Python', 'Apache Airflow', 'AWS', 'DAX'],
-    timeline: '3 months',
-    results: [
-      'Reduced reporting time from 1 week to automated daily updates',
-      'Identified a $50k/month operational inefficiency within the first week of launch',
-      'Adopted by 100% of the management team for weekly reviews'
-    ],
-    lessonsLearned: [
-      'Data quality is the hardest part; garbage in, garbage out',
-      'User adoption requires intuitive UI/UX design in dashboards',
-      'Performance optimization in DAX is crucial for large datasets'
-    ],
-    achievements: ['Consolidated 15 static reports into 3 dynamic dashboards', 'Established the first company-wide data dictionary'],
-    challenges: 'Handling inconsistent data formats across the different sources required complex data cleansing logic and establishing new data entry protocols for the frontline teams.',
-    businessImpact: 'Enabled proactive decision-making, leading to a 15% increase in operational efficiency and uncovering cost-saving opportunities previously hidden in siloed data.',
-    skillsDemonstrated: ['Data Modeling', 'ETL Development', 'Data Visualization', 'SQL', 'Requirement Gathering'],
-    metrics: [
-      { value: '100%', label: 'Automation of Reports' },
-      { value: '15%', label: 'Efficiency Gain' },
-      { value: '5', label: 'Data Sources Integrated' }
-    ],
-    githubUrl: '#',
-    liveUrl: '#',
-    docsUrl: '#',
-    galleryImages: [],
-    dashboardEmbed: ''
+    id: 'file-transfer-automation',
+  title: 'File Transfer Workflow Automation',
+  category: 'Automation',
+  thumbnail: '',
+  technologies: ['JavaScript', 'AWS', 'FileZilla', 'Spreadsheets', 'MS Teams', 'Outlook'],
+
+  shortDescription: 'Automated file transfer workflows from FTP servers to AWS, eliminating repetitive manual processing across 87 accounts and 900+ titles.',
+
+  description: 'Coordinated a cross-functional file transfer automation initiative to eliminate repetitive manual file handling and streamline the delivery of publishing files from FTP servers to AWS. The project involved gathering business requirements, defining file-processing logic, mapping workflows, coordinating with Engineering and Product teams, supporting testing, resolving issues, and managing the rollout.',
+
+  problem: 'File transfers and processing required significant manual intervention, including downloading files, applying processing logic, and uploading them to the target environment. The repetitive workflow was time-consuming, resource-intensive, and created a need for a more reliable and scalable solution.',
+
+  objectives: [
+    'Eliminate repetitive manual intervention in the file transfer workflow',
+    'Automate the movement of files from FTP servers to AWS',
+    'Define processing logic for combining, including, and excluding PDF files',
+    'Improve delivery efficiency and ensure timely file availability',
+    'Create a scalable workflow that could support multiple accounts and titles'
+  ],
+
+  approach: 'Identified repetitive and time-consuming manual activities, presented the problem statement to the Product team, gathered business requirements and file-processing logic, mapped the existing workflow, and collaborated with Engineering to define the automation approach. Coordinated testing, reported defects, supported issue resolution, and facilitated the rollout across accounts.',
+
+  implementation: 'Worked closely with Operations, Product, and Engineering to translate operational requirements and file-processing rules into an automated workflow. Supported the definition and validation of logic for combining, including, and excluding PDF files, coordinated testing, tracked implementation progress, reported defects, and supported the production rollout.',
+
+  toolsUsed: ['JavaScript', 'AWS', 'FileZilla', 'Spreadsheets', 'MS Teams', 'Outlook'],
+
+  timeline: '1.5 years',
+
+  results: [
+    'Automated file transfer workflows across 87 accounts',
+    'Supported automation for 900+ titles',
+    'Saved approximately 70 manual hours per week',
+    'Achieved approximately 92% operational efficiency'
+  ],
+
+  lessonsLearned: [
+    'Detailed requirement gathering and workflow mapping are critical when automating complex operational processes',
+    'Identifying process gaps early helps reduce implementation issues and improve automation reliability',
+    'Repetitive manual activities should be continuously evaluated for automation opportunities to improve efficiency and resource utilization'
+  ],
+
+  achievements: [
+    'Successfully supported automation across 87 accounts and 900+ titles',
+    'Reduced approximately 70 hours of manual effort per week'
+  ],
+
+  challenges: 'The key challenges involved identifying and documenting detailed file-processing logic, mapping the existing workflow accurately, and accounting for potential errors and exceptions during automation.',
+
+  businessImpact: 'The automation enabled timely file delivery without requiring manual intervention for the automated workflows, while significantly reducing repetitive operational effort and allowing resources to focus on higher-value business activities.',
+
+  skillsDemonstrated: [
+    'Project Coordination',
+    'Requirements Gathering',
+    'Stakeholder Management',
+    'Workflow Mapping',
+    'Process Improvement',
+    'Cross-functional Collaboration',
+    'Testing & Issue Management',
+    'Automation',
+    'Problem Solving',
+    'Implementation Support'
+  ],
+
+  metrics: [
+    { value: '87', label: 'Accounts Automated' },
+    { value: '900+', label: 'Titles Supported' },
+    { value: '70h', label: 'Manual Effort Saved/Week' },
+    { value: '92%', label: 'Efficiency' }
+  ],
+
+  githubUrl: '#',
+  liveUrl: '#',
+  docsUrl: '#',
+  galleryImages: [],
+  dashboardEmbed: ''
   },
   // {
   //   id: 'agile-pm-framework',
