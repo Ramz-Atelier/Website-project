@@ -29,7 +29,7 @@ const PROJECTS = [
   id: 'pdf-pre-processing-dashboard',
   title: 'PDF Pre-processing & Enhancement Dashboard',
   category: 'Process Optimization',
-  thumbnail: '',
+  thumbnail: 'assets/images/1pdfprocessing.png',
   technologies: [
     'JavaScript',
     'TypeScript',
