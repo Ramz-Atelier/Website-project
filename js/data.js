@@ -139,7 +139,7 @@ const PROJECTS = [
   id: 'new-client-onboarding-canada-french',
   title: 'New Client Onboarding - Canada (French) 🇨🇦',
   category: 'Client Onboarding & Implementation',
-  thumbnail: '',
+  thumbnail: 'assets/images/2onboarding.png',
   technologies: [
     'Google Meet',
     'Google Sheets',
@@ -239,7 +239,7 @@ const PROJECTS = [
   id: 'file-management-schedule-dashboard',
   title: 'File Management & Delivery Schedule Dashboard',
   category: 'Process Optimization',
-  thumbnail: '',
+  thumbnail: 'assets/images/3filemanagement.png',
   technologies: ['JavaScript', 'TypeScript', 'React', 'Next.js', 'Google Sheets', 'Google Drive', 'Gmail', 'Google Chat', 'Google Meet'],
 
   shortDescription: 'Coordinated the development of a centralized file management and delivery schedule dashboard, consolidating fragmented schedules and enabling automated workflow triggers across 58 accounts.',
@@ -320,7 +320,7 @@ const PROJECTS = [
   id: 'client-side-data-transmission-module',
   title: 'Client-Side Data Transmission Module Upgrade',
   category: 'Technical Improvement',
-  thumbnail: '',
+  thumbnail: 'assets/images/4datatransmission.png',
   technologies: ['Node.js', 'APIs', 'Azure', 'ClickHouse', 'SQL', 'MD5', 'Checksum', '7-Zip', 'Excel', 'Adobe Acrobat'],
 
   shortDescription: 'Coordinated a technical improvement initiative to address recurring file corruption during client-side data transmission by replacing a legacy PHP module with a Node.js-based solution.',
@@ -402,7 +402,7 @@ const PROJECTS = [
   id: 'b2b-digital-content-delivery-overseas',
   title: 'B2B Digital Content Delivery - Overseas',
   category: 'Digital Content Delivery',
-  thumbnail: '',
+  thumbnail: 'assets/images/5b2b.png',
   technologies: ['AWS', 'JavaScript', 'Webhooks', 'FileZilla'],
 
   shortDescription: 'Coordinated the transition from manual to automated digital content delivery for B2B clients, enabling timely delivery across multiple time zones and eliminating manual intervention.',
@@ -481,7 +481,7 @@ const PROJECTS = [
     id: 'file-transfer-automation',
   title: 'File Transfer Workflow Automation',
   category: 'Automation',
-  thumbnail: '',
+  thumbnail: 'assets/images/6filetransfer.png',
   technologies: ['JavaScript', 'AWS', 'FileZilla', 'Spreadsheets', 'MS Teams', 'Outlook'],
 
   shortDescription: 'Automated file transfer workflows from FTP servers to AWS, eliminating repetitive manual processing across 87 accounts and 900+ titles.',
@@ -602,7 +602,7 @@ const PROJECTS = [
     id: 'customer-success-optimization',
     title: 'Customer Success Process Optimization',
     category: 'Process Improvement',
-    thumbnail: '',
+    thumbnail: 'assets/images/7cs.png',
     technologies: ['Outlook', 'HubSpot', 'Freshdesk', 'Google Sheets'],
     shortDescription: 'Redesigned the customer onboarding journey, reducing churn by 25% and increasing CSAT scores.',
     description: 'Comprehensively mapped and redesigned the customer onboarding and support journey. Implemented automated touchpoints, standardized playbooks, and integrated CRM tools to provide a seamless customer experience.',
