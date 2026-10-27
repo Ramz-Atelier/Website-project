@@ -45,23 +45,15 @@ const PROJECTS = [
     'Google Meet'
   ],
 
-  shortDescription: 'Coordinated the development of a configurable PDF pre-processing dashboard that standardized file enhancements across 1,562 titles while reducing manual processing effort.',
+  shortDescription: 'Coordinated the implementation of a centralized dashboard to streamline PDF pre-processing and enhancement across publishing workflows, improving file readiness for digital publication.',
 
   description: 'Coordinated a process optimization initiative to reduce repetitive manual intervention required to correct and enhance PDF files before publishing. The project involved identifying recurring PDF quality issues, gathering patterns and corresponding fixes, and collaborating with Engineering, Frontend, Backend, and technical stakeholders to create a centralized dashboard for configuring title-specific preprocessing methods. The solution enabled different PDF enhancement rules to be applied based on identified file characteristics and allowed Operations to manage future updates through the dashboard.',
 
-  problem: 'Different PDF files required different preprocessing and enhancement methods depending on their format and potential quality issues. Operations teams were manually identifying problems, reprocessing files, and repeatedly using tools such as Adobe Acrobat to achieve the required output. This increased processing time and created repetitive manual effort.',
+  problem: 'PDF files frequently required manual correction and reprocessing to meet publishing requirements. Different file issues called for different fixes, increasing operational effort and creating risks to timely delivery.',
 
-  objectives: [
-    'Reduce manual intervention required for PDF preprocessing and enhancement',
-    'Identify and standardize recurring PDF problems and their corresponding fixes',
-    'Create a centralized dashboard for managing title-specific preprocessing methods',
-    'Enable configurable processing rules for different file requirements',
-    'Improve the consistency and speed of producing enhanced PDF outputs'
-  ],
+  approach: 'Identified recurring PDF issues, gathered examples and requirements from Operations, and collaborated with Engineering and other stakeholders to consolidate enhancement workflows into a configurable dashboard.',
 
-  approach: 'Collaborated with clients and Operations teams to identify recurring PDF quality issues and gather patterns across different file types. Documented the problems and corresponding enhancement methods, identified the need for a configurable dashboard, and worked with Engineering, Frontend, Backend, and technical stakeholders to translate the requirements into a scalable workflow. Coordinated testing, identified gaps, provided feedback, and supported the rollout.',
-
-  implementation: 'The Engineering and Frontend teams developed a dashboard that enabled titles with specific PDF problems to be onboarded with customized preprocessing methods. Different enhancement rules could be configured for individual title requirements, allowing the appropriate preprocessing workflow to be applied automatically. Supported multiple rounds of testing, validated output quality, tracked processing failures and results, provided improvement feedback, and ensured the dashboard could be updated for future requirements.',
+  implementation: 'Coordinated testing, shared feedback, and supported rollout to enable title-specific processing requirements.',
 
   toolsUsed: [
     'JavaScript',
@@ -83,28 +75,10 @@ const PROJECTS = [
   results: [
     'Enabled customized preprocessing methods across 1,562 titles',
     'Reduced approximately 2 hours of manual processing effort per day',
-    'Reduced dependency on Adobe Acrobat usage by approximately 35%',
-    'Reduced manual intervention required for recurring PDF processing issues',
-    'Improved consistency and speed of producing enhanced PDF outputs'
+    'Reduced dependency on Adobe Acrobat usage by approximately 35%'
   ],
-
-  lessonsLearned: [
-    'Understanding recurring problem patterns is essential before designing scalable automation',
-    'Configurable workflows provide greater flexibility when different titles require different processing rules',
-    'Providing clear examples and output expectations helps technical teams implement complex processing logic more effectively',
-    'Post-implementation visibility into processing failures and results is important for continuous improvement'
-  ],
-
-  achievements: [
-    'Successfully coordinated the implementation of a configurable PDF preprocessing workflow',
-    'Enabled 1,562 titles with customized preprocessing methods',
-    'Reduced approximately 2 hours of daily manual processing effort',
-    'Created a solution that allowed future preprocessing rules to be updated without redesigning the entire workflow'
-  ],
-
-  challenges: 'The project involved identifying a wide variety of PDF problems and determining the appropriate enhancement method for each scenario. Additional challenges included coordinating multiple stakeholders, translating varied processing requirements into configurable logic, validating different output scenarios, and tracking preprocessing failures and their causes.',
-
-  businessImpact: 'The solution reduced repetitive manual effort involved in PDF reprocessing and improved the speed and consistency of producing enhanced files. By centralizing preprocessing methods in a configurable dashboard, the workflow became more adaptable to new title-specific requirements while reducing dependency on manual PDF correction tools.',
+    
+  businessImpact: 'Reduced repetitive manual processing and dependency on Adobe Acrobat, enabling faster preparation of publication-ready PDFs and supporting more consistent, timely content delivery.',
 
   skillsDemonstrated: [
     'Requirements Gathering',
